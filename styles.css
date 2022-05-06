@@ -1,0 +1,246 @@
+:root {
+  --text-color: #212121;
+  --blue: #2196f3;
+  --white: #ffffff;
+  /* --lite-grey: #e5e5e5; */
+  --dark-grey: #2f303a;
+  --texr-p: #757575;
+  --footer-text: rgba(255, 255, 255, 0.6);
+  --portfolio-pages: #eeeeee;
+  --portfolio-button: #f5f4fa;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--white);
+  letter-spacing: 0.03em;
+}
+h1 {
+  font-weight: 900;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 44px;
+  line-height: 1.36;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--text-color);
+}
+button {
+  cursor: pointer;
+  /* border: none; */
+}
+.active {
+  color: var(--blue);
+}
+/* main page */
+/* header */
+
+nav {
+  text-decoration: none;
+}
+nav a {
+  font-size: 26px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.web {
+  font-size: 26px;
+  color: var(--blue);
+}
+
+.nav-list {
+  list-style: none;
+}
+.nav-list a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-list a:hover,
+.nav-list a:focus,
+.kontakt-list a:hover,
+.kontakt-list a:focus {
+  color: var(--blue);
+}
+.kontakt-list {
+  list-style: none;
+  text-decoration: none;
+}
+.kontakt-list a {
+  color: var(--texr-p);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.logo-web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+/* end header */
+/* main */
+/* section hero */
+.hero {
+  background-color: var(--dark-grey);
+  color: var(--white);
+}
+.hero button {
+  font-family: "Roboto";
+  background-color: var(--blue);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white);
+}
+.hero button:hover {
+  background-color: #188ce8;
+}
+
+/* end section hero */
+/* section quality */
+.quality {
+  font-size: 14px;
+  background-color: var(--white);
+}
+.quality li {
+  list-style: none;
+}
+.quality li > h3 {
+  color: var(--text-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.14;
+  font-size: 14px;
+}
+.quality li > p {
+  color: var(--texr-p);
+  line-height: 1.7;
+}
+
+/* end section quality */
+/* section work */
+.work {
+  background-color: var(--white);
+}
+.work li {
+  list-style: none;
+}
+/* end section work */
+/* section team */
+.team {
+  background-color: #f5f4fa;
+}
+.team li {
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* border-radius: 0px 0px 4px 4px; */
+  list-style: none;
+}
+.team li > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--text-color);
+}
+.team li > p {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--texr-p);
+}
+/* end section team */
+/* end main */
+/* footer */
+footer {
+  background-color: var(--dark-grey);
+}
+
+.footer-logo {
+  color: var(--white);
+}
+footer a {
+  color: var(--text-color);
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+address a:hover {
+  color: var(--white);
+}
+
+address p {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.7;
+}
+address a {
+  color: var(--footer-text);
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* end footer */
+/* end main page */
+/* portfolio page  */
+/* section portfolio */
+.portfolio {
+}
+.portfolio li {
+  list-style: none;
+}
+.portfolio button {
+  background-color: var(--portfolio-button);
+  font-family: "Roboto";
+  /* border-radius: 4px; */
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.portfolio button:hover {
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-img li > img {
+  width: 370px;
+  height: 294px;
+}
+/* .portfolio-img li {
+  border: 1px solid var(--portfolio-pages);
+} */
+.portfolio-img li > h3 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-img li > p {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--texr-p);
+}
+/* end section portfolio */
+/* end portfolio page  */ ;
