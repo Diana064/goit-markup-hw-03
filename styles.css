@@ -60,7 +60,7 @@ ul {
 }
 button {
   cursor: pointer;
-  /* border: none; */
+  border: none;
 }
 .active {
   color: var(--blue);
@@ -70,8 +70,9 @@ button {
 header {
   display: flex;
   align-items: center;
-  margin: 25px 0;
+  padding: 25px 0;
   justify-content: space-between;
+  border-bottom: 1px solid #ececec;
 }
 nav {
   display: flex;
@@ -94,6 +95,7 @@ nav a {
   list-style: none;
   padding: 0;
   text-align: center;
+  align-items: center;
 }
 .nav-list li {
   margin-right: 50px;
@@ -257,6 +259,9 @@ nav a {
 /* footer */
 footer {
   background-color: var(--dark-grey);
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -269,6 +274,7 @@ footer a {
   text-decoration: none;
 }
 address {
+  padding-top: 20px;
   font-style: normal;
 }
 address a:hover {
@@ -315,9 +321,9 @@ address a {
   width: 370px;
   height: 294px;
 }
-/* .portfolio-img li {
+.portfolio-img li {
   border: 1px solid var(--portfolio-pages);
-} */
+}
 .portfolio-img li > h3 {
   color: var(--text-color);
   font-weight: 700;
