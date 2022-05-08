@@ -29,6 +29,9 @@ body {
   padding-bottom: 94px;
   /* outline: 1px solid green; */
 }
+img {
+  display: block;
+}
 h1 {
   padding: 0;
   margin: 0;
@@ -86,7 +89,6 @@ header {
 .header {
   display: flex;
   align-items: center;
-  padding: 25px 0;
   justify-content: space-between;
 }
 nav {
@@ -108,7 +110,7 @@ nav a {
 .nav-list {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding: 32px 0;
   text-align: center;
   align-items: center;
 }
@@ -164,17 +166,16 @@ nav a {
   align-items: center;
   background-color: var(--dark-grey);
   color: var(--white);
-}
-.hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero-content {
   text-align: center;
 }
 .hero h1 {
   width: 696px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 }
 .hero button {
   border: none;
@@ -201,7 +202,6 @@ nav a {
 }
 .quality ul {
   display: flex;
-  justify-content: space-between;
 }
 .quality li {
   /* outline: 1px solid tomato; */
@@ -213,7 +213,7 @@ nav a {
   margin-right: 0px;
 }
 .quality li > h3 {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: var(--text-color);
   font-weight: 700;
   text-transform: uppercase;
@@ -232,11 +232,13 @@ nav a {
 }
 .work ul {
   display: flex;
-  justify-content: space-between;
-  margin-right: 30px;
 }
 .work li {
   list-style: none;
+  margin-right: 30px;
+}
+.work li:last-child {
+  margin-right: 0;
 }
 /* end section work */
 /* section team */
@@ -245,7 +247,6 @@ nav a {
 }
 .team ul {
   display: flex;
-  justify-content: space-between;
 }
 
 .team li {
@@ -259,23 +260,25 @@ nav a {
 .team li:last-child {
   margin-right: 0;
 }
-.team li > h3 {
+.team-text {
+  padding: 30px 0;
+  text-align: center;
+}
+.team-text h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
-
   color: var(--text-color);
+  margin-bottom: 10px;
 }
-.team li > p {
+.team-text p {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-bottom: 30px;
   color: var(--texr-p);
 }
+
 /* end section team */
 /* end main */
 /* footer */
@@ -304,11 +307,21 @@ address p {
   color: var(--white);
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 9px;
 }
-address a {
+
+address a:last-child {
+  margin-bottom: 0px;
+}
+.footer-text {
+  padding: 60px 0;
+}
+.footer-info a {
+  display: flex;
   color: var(--footer-text);
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 9px;
 }
 /* end footer */
 /* end main page */
